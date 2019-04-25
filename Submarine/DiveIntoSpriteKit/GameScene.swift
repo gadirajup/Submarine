@@ -105,7 +105,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         sprite.zPosition = 1
         addChild(sprite)
         
-        sprite.physicsBody = .init(texture: sprite.texture!, size: sprite.size)
+        sprite.physicsBody = .init(texture: sprite.texture!, size: sprite.texture!.size())
         sprite.physicsBody?.velocity = CGVector(dx: -500, dy: 0)
         sprite.physicsBody?.linearDamping = 0
         sprite.physicsBody?.contactTestBitMask = 1

@@ -94,7 +94,7 @@ class GameScene: SKScene {
     }
 
     override func update(_ currentTime: TimeInterval) {
-        // this method is called before each frame is rendered
+        score = Int(currentTime)
     }
     
     func createGrid() {
